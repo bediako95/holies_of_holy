@@ -1,6 +1,10 @@
 import { Flex, Box, Text } from "@theme-ui/components";
 import Image from "next/image";
 import logo from "../assets/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faGoogle } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <Flex
@@ -8,6 +12,7 @@ const Footer = () => {
         mt: "20%",
         justifyContent: "space-around",
         bg: "black",
+        p: 5,
       }}
     >
       <Flex
@@ -28,17 +33,46 @@ const Footer = () => {
         <Text
           sx={{
             color: "white",
+            lineHeight: 2,
           }}
         >
           A creative and technological hub focusing on providing quality and
           cost effective solutions
         </Text>
+
+        <Flex
+          sx={{
+            flexDirection: "row",
+            gap: "70%",
+            justifyContent: "space-between",
+            mt: "20%",
+          }}
+        >
+          <Flex
+            sx={{
+              gap: 3,
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faGoogle}
+              style={{ fontSize: 30, color: "blue" }}
+            />
+            <FontAwesomeIcon
+              icon={faSearch}
+              style={{ fontSize: 30, color: "blue" }}
+            />
+            <FontAwesomeIcon
+              icon="fa-brands fa-twitter"
+              style={{ fontSize: 30, color: "blue" }}
+            />
+          </Flex>
+        </Flex>
       </Flex>
 
       <Flex
         sx={{
           flexDirection: "column",
-          lineHeight: 3,
+          lineHeight: 2,
         }}
       >
         <Text
@@ -56,20 +90,31 @@ const Footer = () => {
         >
           Social Media Management
         </Text>
-        <Text
-          sx={{
-            color: "white",
-          }}
-        >
-          Web development
-        </Text>
-        <Text
-          sx={{
-            color: "white",
-          }}
-        >
-          SVideography & Editing
-        </Text>
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Web development
+            </Text>
+          </a>
+        </Link>
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Videography & Editing
+            </Text>
+          </a>
+        </Link>
+
         <Text
           sx={{
             color: "white",
@@ -77,20 +122,45 @@ const Footer = () => {
         >
           2D & 3D Animation
         </Text>
-        <Text
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Printing
+            </Text>
+          </a>
+        </Link>
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Magazines, Brochures, Calenders
+            </Text>
+          </a>
+        </Link>
+
+        <Flex
           sx={{
-            color: "white",
+            mt: "30%",
           }}
         >
-          Printing
-        </Text>
-        <Text
-          sx={{
-            color: "white",
-          }}
-        >
-          Magazines, Brochures, Calenders{" "}
-        </Text>
+          <Text
+            sx={{
+              color: "white",
+            }}
+          >
+            jd
+          </Text>
+          <Text></Text>
+        </Flex>
       </Flex>
 
       <Flex
@@ -107,27 +177,42 @@ const Footer = () => {
         >
           Company
         </Text>
-        <Text
-          sx={{
-            color: "white",
-          }}
-        >
-          About us
-        </Text>
-        <Text
-          sx={{
-            color: "white",
-          }}
-        >
-          Mission
-        </Text>
-        <Text
-          sx={{
-            color: "white",
-          }}
-        >
-          Contact
-        </Text>
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              About us
+            </Text>
+          </a>
+        </Link>
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Mission
+            </Text>
+          </a>
+        </Link>
+
+        <Link href="/" passHref>
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Contact
+            </Text>
+          </a>
+        </Link>
       </Flex>
     </Flex>
   );

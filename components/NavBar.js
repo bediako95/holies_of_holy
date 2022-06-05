@@ -10,21 +10,27 @@ const NavBar = () => {
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 10,
-        height: 60,
+        height: 70,
         bg: "black",
       }}
     >
       <Box
         sx={{
           color: "white",
-          mt: "-60px",
+          mt: "-55px",
           pt: 2,
         }}
       >
         <Image src={logo} width={250} height={170} />
       </Box>
 
-      <Flex as="nav">
+      <Flex
+        as="nav"
+        sx={{
+          mt: "15px",
+          pr: 60,
+        }}
+      >
         <ul className={navstyle.ul}>
           <li className={navstyle.li}>
             <Link href="/about" passHref>

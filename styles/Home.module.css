@@ -1,3 +1,5 @@
+
+
 .container {
   padding: 0 2rem;
 }
@@ -113,4 +115,14 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.HomeImage{
+  background-image: linear-gradient(rgb(27, 27, 27), rgba(41, 39, 41, 0.5)),
+                  url("../assets/creative.png");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+
 }

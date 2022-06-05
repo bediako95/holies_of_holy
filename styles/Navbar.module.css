@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
     text-decoration: none; 
+    
 }
 .li{
     display: inline;
+    
 }
   
 .li a {  
@@ -13,6 +15,7 @@
   color: rgb(244, 202, 22);
    font-size:20px;  
    padding: 10px 40px;
+   
        
     
   }  

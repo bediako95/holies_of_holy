@@ -1,15 +1,23 @@
+import { Flex, Text } from "@theme-ui/components";
+import Image from "next/image";
 import { Service_data } from "../service_data";
-import Services_Section from "./HomePage/Services_Section";
+import Service_Item from "./Service_Item";
 
-const Services_List = () => {
+const Services_List = ({ data }) => {
   return (
-    <>
-      {Service_data.map((data, i) => (
-        <>
-          <Services_Section key={i} image={data.image} desc={data.image} />
-        </>
-      ))}
-    </>
+    <Flex
+      sx={{
+        flexDirection: "column",
+      }}
+    >
+      <Flex>
+        {Service_data.map((data) => (
+          <>
+            <Service_Item item={data} />
+          </>
+        ))}
+      </Flex>
+    </Flex>
   );
 };
 

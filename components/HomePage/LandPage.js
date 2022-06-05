@@ -1,5 +1,7 @@
 import { Flex, Box, Text } from "@theme-ui/components";
-
+import Image from "next/image";
+import creative from "../../assets/creative.png";
+import styles from "../../styles/Home.module.css";
 const LandPage = () => {
   return (
     <Flex
@@ -8,29 +10,35 @@ const LandPage = () => {
         flexDirection: "row",
         alignItems: "center",
       }}
+      className={styles.HomeImage}
     >
       <Flex
         sx={{
           flexDirection: "column",
-          p: 30,
+          p: 10,
+          alignItems: "center",
         }}
       >
         <Text
           sx={{
             fontSize: "48px",
             fontWeight: 700,
-            width: "50%",
+
             lineHeight: "45px",
             mb: 30,
+            color: "white",
+            textAlign: "center",
           }}
         >
           A Creative hub of excellence
         </Text>
         <Text
           sx={{
-            width: "40%",
+            width: "60%",
             lineHeight: "35px",
             fontSize: "1.2rem",
+            color: "white",
+            textAlign: "center",
           }}
         >
           A creative hub providing wide varieties of services such as
@@ -39,9 +47,6 @@ const LandPage = () => {
           one hub for creatives
         </Text>
       </Flex>
-
-      {/******Image here  */}
-      <Box>Image here</Box>
     </Flex>
   );
 };

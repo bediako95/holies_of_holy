@@ -1,25 +1,36 @@
+import { animation } from "./assets/animation.jpg";
+import { photo } from "./assets/photo.jpg";
+import { web } from "./assets/web.png";
+import { print } from "./assets/print.jpg";
+import { social } from "./assets/social.png";
+import { brochures } from "./assets/brochures.jpg";
+
 export const Service_data = [
   {
     image: "/assets/web.png",
-    dec: "Web development",
+    desc: "Web development",
   },
   {
-    image: "/assets/social.png",
-    dec: "Social Media Management",
-  },
-
-  {
-    image: "/assets/photo.png",
-    dec: "Videography & Editing",
+    image: "/assets/web.png",
+    desc: "Social Media Management",
   },
 
   {
-    image: "/assets/print.jpg",
-    dec: "Prints(flyers, T-Shirts)",
+    image: "/assets/web.png",
+    desc: "Videography & Editing",
   },
 
   {
-    image: "/assets/animation.jpg",
-    dec: "2D & 3D Animation",
+    image: "/assets/web.png",
+    desc: "Prints(flyers, T-Shirts)",
+  },
+
+  {
+    image: "/assets/web.png",
+    desc: "2D & 3D Animation",
+  },
+  {
+    image: "/assets/web.png",
+    desc: "brochures, Magazines",
   },
 ];

@@ -5,7 +5,9 @@ import NavBar from "./NavBar";
 const Layout = ({ children }) => {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>Holies of Holy Concepts</title>
+      </Head>
       <NavBar />
       <main>{children}</main>
 

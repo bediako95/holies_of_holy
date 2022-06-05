@@ -1,6 +1,9 @@
 import { Flex, Text, Box, Heading } from "@theme-ui/components";
+import Image from "next/image";
+import { Service_data } from "../../service_data";
+import Services_List from "../Services_List";
 
-const Services_Section = ({ image, desc }) => {
+const Services_Section = () => {
   return (
     <Flex
       sx={{
@@ -26,9 +29,9 @@ const Services_Section = ({ image, desc }) => {
         </Text>
         <Text
           sx={{
-            color: "white",
+            color: "#DBA800",
             fontWeight: "bold",
-            fontSize: "30px",
+            fontSize: "35px",
             mt: "-15px",
           }}
         >
@@ -36,21 +39,7 @@ const Services_Section = ({ image, desc }) => {
         </Text>
       </Flex>
 
-      <Flex
-        sx={{
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-        }}
-      ></Flex>
-
-      <Flex
-        sx={{
-          flexDirection: "column",
-        }}
-      >
-        <Text>{image}</Text>
-        <Text>{desc}</Text>
-      </Flex>
+      <Services_List data={Service_data} />
     </Flex>
   );
 };
