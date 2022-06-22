@@ -2,13 +2,13 @@ import Head from "next/head";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 
-const Layout = ({ children }) => {
+const Layout = ({ children,heading }) => {
   return (
     <>
       <Head>
         <title>Holies of Holy Concepts</title>
       </Head>
-      <NavBar />
+      <NavBar title={heading} />
       <main>{children}</main>
 
       <Footer />

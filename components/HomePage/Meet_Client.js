@@ -1,8 +1,7 @@
 import { Flex, Box, Text } from "@theme-ui/components";
 import Image from "next/image";
-import person from "../../assets/person.jpg";
-import person_1 from "../../assets/person_1.jpg";
-import person_2 from "../../assets/person_3.jpg";
+import { Clients } from "../../service_data";
+import style from "../../styles/Home.module.css";
 
 const Meet_Client = () => {
   return (
@@ -23,6 +22,9 @@ const Meet_Client = () => {
         <Text
           sx={{
             fontSize: "32px",
+            "@media screen and (max-width:720px)": {
+              fontSize: "25px",
+            },
           }}
         >
           Meet Our{" "}
@@ -47,88 +49,29 @@ const Meet_Client = () => {
 
       <Flex
         sx={{
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          gap: 80,
-          m: 40,
+          gap: 20,
+          m: 20,
+          p: 20,
+          alignContent: "center",
+
+          "@media screen and (max-width:720px)": {
+            gap: 10,
+            m: 10,
+            p: 10,
+          },
         }}
       >
-        <Flex
-          sx={{
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Box></Box>
-          <Image
-            style={{
-              borderRadius: "50%",
-            }}
-            src={person}
-            alt="Image"
-            width={350}
-            height={300}
-          />
-          <Text
-            sx={{
-              mt: 30,
-              fontWeight: 700,
-              fontSize: "20px",
-            }}
-          >
-            SMITH ALAN
-          </Text>
-        </Flex>
-        <Flex
-          sx={{
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Image
-            style={{
-              borderRadius: "50%",
-            }}
-            src={person_1}
-            alt="Image"
-            width={350}
-            height={300}
-          />
-          <Text
-            sx={{
-              mt: 30,
-              fontWeight: 700,
-              fontSize: "20px",
-            }}
-          >
-            SMITH ALAN
-          </Text>
-        </Flex>
-        <Flex
-          sx={{
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Image
-            src={person_2}
-            alt="Image"
-            width={350}
-            height={300}
-            style={{
-              borderRadius: "50%",
-            }}
-          />
-          <Text
-            sx={{
-              mt: 30,
-              fontWeight: 700,
-              fontSize: "20px",
-            }}
-          >
-            SMITH ALAN
-          </Text>
-        </Flex>
+        {Clients.map((client, index) => (
+          <div key={index}>
+            <Image
+              src={client.client_image}
+              alt=""
+              width={250}
+              height={250}
+              className={style.client_image}
+            />
+          </div>
+        ))}
       </Flex>
     </Flex>
   );

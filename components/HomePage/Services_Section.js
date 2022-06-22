@@ -4,12 +4,14 @@ import { Service_data } from "../../service_data";
 import Services_List from "../Services_List";
 
 const Services_Section = () => {
+  console.log(Service_data);
   return (
     <Flex
       sx={{
         flexDirection: "column",
         bg: "#F4CA16",
-        height: "40vh",
+        height: "60vh",
+        mb: 30,
       }}
     >
       <Flex
@@ -22,7 +24,12 @@ const Services_Section = () => {
       >
         <Text
           sx={{
-            fontSize: "32px",
+            fontSize: "2rem",
+            fontFamily: 700,
+
+            "@media screen and (max-width:720px)": {
+              fontSize: "1.6rem",
+            },
           }}
         >
           Services

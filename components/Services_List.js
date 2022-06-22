@@ -3,20 +3,30 @@ import Image from "next/image";
 import { Service_data } from "../service_data";
 import Service_Item from "./Service_Item";
 
-const Services_List = ({ data }) => {
+const Services_List = ({}) => {
   return (
     <Flex
       sx={{
-        flexDirection: "column",
+        width: "100%",
+        gap: 60,
+        m: "0% 10% 0% 10%",
+        pb: "10%",
+        alignItems: "center",
+        alignContent: "center",
+        "@media screen and (max-width:1024px)": {
+          width: "80%",
+          gap: 4,
+        },
+        "@media screen and (max-width:720px)": {
+          gap: 3,
+        },
       }}
     >
-      <Flex>
-        {Service_data.map((data) => (
-          <>
-            <Service_Item item={data} />
-          </>
-        ))}
-      </Flex>
+      {Service_data.map((data, i) => (
+        <div key={i}>
+          <Service_Item item={data} />
+        </div>
+      ))}
     </Flex>
   );
 };
