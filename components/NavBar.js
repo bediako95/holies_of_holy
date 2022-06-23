@@ -4,7 +4,7 @@ import navstyle from "../styles/Navbar.module.css";
 import Image from "next/image";
 import logo from "../public/service_assets/logo.png";
 import { useRouter } from "next/router";
-import MenuIcon from "./HomePage/MenuIcon";
+
 import { useState } from "react";
 
 const NavBar = ({ title }) => {
@@ -36,7 +36,7 @@ const NavBar = ({ title }) => {
           pt: 2,
           cursor: "pointer",
           "@media screen and (max-width:720px)": {
-            mt: "-8%",
+            mt: "-10%",
           },
         }}
       >
@@ -56,6 +56,7 @@ const NavBar = ({ title }) => {
           "@media screen and (max-width:720px)": {
             fontSize: "1rem",
             p: "2% 1% 0% 0%",
+            mr: "30%",
           },
         }}
       >
@@ -70,7 +71,7 @@ const NavBar = ({ title }) => {
           mr: 60,
         }}
       >
-        <ul className={navstyle.ul}>
+        <ul className={active ? navstyle.ul_active : navstyle.ul}>
           <li className={navstyle.li}>
             <Link href="/about" passHref>
               <a>About us</a>
@@ -88,7 +89,17 @@ const NavBar = ({ title }) => {
           </li>
         </ul>
       </Flex>
-      <MenuIcon />
+
+      <Box
+        onClick={() => setActive(!active)}
+        sx={{
+          mt: 20,
+        }}
+      >
+        <div
+          className={active ? navstyle.active_menu_icon : navstyle.menu_icon}
+        />
+      </Box>
     </Flex>
   );
 };
