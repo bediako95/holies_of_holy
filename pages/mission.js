@@ -17,6 +17,9 @@ const Mission = () => {
             alignItems: "center",
             m: 100,
             width: "auto",
+            "@media screen and (max-width:720px)": {
+              mx: 30,
+            },
           }}
         >
           <Text
@@ -46,7 +49,7 @@ const Mission = () => {
               fontSize: "1.2rem",
               lineHeight: 2,
               "@media screen and (max-width:720px)": {
-                fontSize: "1.1rem",
+                fontSize: "1rem",
                 textAlign: "center",
               },
             }}
@@ -64,6 +67,9 @@ const Mission = () => {
             m: 100,
             mt: "-1%",
             width: "auto",
+            "@media screen and (max-width:720px)": {
+              mx: 5,
+            },
           }}
         >
           <Text
@@ -92,11 +98,11 @@ const Mission = () => {
               fontSize: "1.2rem",
               lineHeight: 2,
               "@media screen and (max-width:720px)": {
-                fontSize: "1.1rem",
+                fontSize: "1rem",
               },
             }}
           >
-            To be the umber one and top branding Agency in the world
+            To be the number one and top branding Agency in the world
           </Text>
         </Flex>
 
@@ -107,6 +113,9 @@ const Mission = () => {
             m: 100,
             mt: "-1%",
             width: "auto",
+            "@media screen and (max-width:720px)": {
+              mx: 30,
+            },
           }}
         >
           <Text
@@ -135,7 +144,7 @@ const Mission = () => {
               fontSize: "1.2rem",
               lineHeight: 2,
               "@media screen and (max-width:720px)": {
-                fontSize: "1.1rem",
+                fontSize: "1rem",
               },
             }}
           >

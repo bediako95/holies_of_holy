@@ -50,6 +50,7 @@ const Service_Detail = ({ desc, infor, image }) => {
           sx={{
             fontSize: "1.3rem",
             lineHeight: 2,
+            textAlign: "center",
             "@media screen and (max-width:720px)": {
               fontSize: "1.1rem",
               px: 3,

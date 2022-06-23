@@ -96,7 +96,7 @@ const Footer = () => {
           Services
         </Text>
 
-        <Link href="services/Web%20development%20Services" passHref>
+        <Link href="http://localhost:3000/services/Web%20development" passHref>
           <a>
             <Text
               sx={{
@@ -108,7 +108,10 @@ const Footer = () => {
           </a>
         </Link>
 
-        <Link href="services/2D%20&%203D%20Animation%20Services" passHref>
+        <Link
+          href="http://localhost:3000/services/2D%20&%203D%20Animation"
+          passHref
+        >
           <a>
             <Text
               sx={{
@@ -120,7 +123,10 @@ const Footer = () => {
           </a>
         </Link>
 
-        <Link href="services/Videography%20&%20Editing%20Services" passHref>
+        <Link
+          href="http://localhost:3000/services/Social%20Media%20Management"
+          passHref
+        >
           <a>
             <Text
               sx={{
@@ -132,31 +138,20 @@ const Footer = () => {
           </a>
         </Link>
 
-        <Link href="/services" passHref>
+        <Link href="http://localhost:3000/services/%20Print%20Design" passHref>
           <a>
             <Text
               sx={{
                 color: "white",
               }}
             >
-              T-Shirt design & Printing
+              Print Design
             </Text>
           </a>
         </Link>
 
-        <Link href="services/Web%20development%20Services" passHref>
-          <a>
-            <Text
-              sx={{
-                color: "white",
-              }}
-            >
-              Video & Editing
-            </Text>
-          </a>
-        </Link>
         <Link
-          href="services/Brochures,%20Magazines,%20Calenders%20Services"
+          href="http://localhost:3000/services/Videography%20&%20Editing"
           passHref
         >
           <a>
@@ -165,7 +160,7 @@ const Footer = () => {
                 color: "white",
               }}
             >
-              2D & 3D Animation
+              Videography & Editing
             </Text>
           </a>
         </Link>

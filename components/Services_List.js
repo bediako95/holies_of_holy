@@ -8,14 +8,16 @@ const Services_List = ({}) => {
     <Flex
       sx={{
         width: "100%",
-        gap: 60,
-        m: "0% 10% 0% 10%",
+        gap: 70,
+        mx: "10%",
         pb: "10%",
-        alignItems: "center",
-        alignContent: "center",
+        px: "5%",
+
         "@media screen and (max-width:1024px)": {
-          width: "80%",
-          gap: 4,
+          width: "90%",
+          gap: 50,
+          px: "5%",
+          mx: "auto",
         },
         "@media screen and (max-width:720px)": {
           gap: 3,

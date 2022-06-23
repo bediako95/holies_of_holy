@@ -5,8 +5,10 @@ import Image from "next/image";
 import logo from "../public/service_assets/logo.png";
 import { useRouter } from "next/router";
 import MenuIcon from "./HomePage/MenuIcon";
+import { useState } from "react";
 
 const NavBar = ({ title }) => {
+  const [active, setActive] = useState(false);
   const router = useRouter();
   const handleBack = () => {
     router.push("/");
@@ -29,13 +31,16 @@ const NavBar = ({ title }) => {
     >
       <Box
         sx={{
-          mt: "-50px",
-          ml: "-5%",
+          mt: "-2.5%",
+          ml: "-10%",
           pt: 2,
           cursor: "pointer",
+          "@media screen and (max-width:720px)": {
+            mt: "-8%",
+          },
         }}
       >
-        <Image src={logo} width={250} height={170} onClick={handleBack} />
+        <Image src={logo} width={200} height={150} onClick={handleBack} />
       </Box>
       <Box
         sx={{
@@ -49,7 +54,7 @@ const NavBar = ({ title }) => {
           },
 
           "@media screen and (max-width:720px)": {
-            fontSize: "0.8rem",
+            fontSize: "1rem",
             p: "2% 1% 0% 0%",
           },
         }}
@@ -83,28 +88,7 @@ const NavBar = ({ title }) => {
           </li>
         </ul>
       </Flex>
-      <Box
-        sx={{
-          p: 10,
-          cursor: "pointer",
-          //display: "none",
-        }}
-      >
-        <MenuButton
-          //aria-label="Toggle Menu"
-          sx={{
-            color: "white",
-            display: "none",
-
-            "@media screen and (max-width:720px)": {
-              display: "block",
-              ":hover ¬.ul": {
-                left: 0,
-              },
-            },
-          }}
-        />
-      </Box>
+      <MenuIcon />
     </Flex>
   );
 };

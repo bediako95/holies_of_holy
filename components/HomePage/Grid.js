@@ -7,6 +7,7 @@ const GridView = ({ bgImage, title, desc }) => {
       sx={{
         height: "100%",
         width: "100%",
+        "@media screen and (max-width:720px)": {},
       }}
     >
       <Flex
@@ -25,6 +26,7 @@ const GridView = ({ bgImage, title, desc }) => {
             lineHeight: 1.5,
             height: "70%",
             width: "90%",
+            mx: "auto",
             px: 10,
             py: 30,
           },
@@ -72,7 +74,7 @@ const GridView = ({ bgImage, title, desc }) => {
             pb: 60,
 
             "@media screen and (max-width:720px)": {
-              lineHeight: 1,
+              lineHeight: 1.2,
               fontSize: "0.9rem",
               pb: "100%",
               p: "15% 15% 100% 15%",

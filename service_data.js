@@ -20,19 +20,20 @@ export const Service_data = [
   },
   {
     image: "/service_assets/printing.jpg",
-    desc: " Shirt Printing",
+    desc: " Print Design ",
   },
-  {
-    image: "/service_assets/magazine.jpg",
+  /******{
+    image: "/service_assets/brochures.jpg",
     desc: "Print Design",
   },
+  **/
 ];
 
 export const services_information = [
   {
     desc: "Web development",
     infor:
-      "We  help create all types of web-based software and ensure great experience for web users. At ScienceSoft, we professionally design, redesign and continuously support customer-facing and enterprise web apps to achieve high conversion and adoption rates.",
+      "We help create all types of web-based software and ensure great epxerience for web users. We professionally design, redesign and continously support customer-facing and enterpreise web apps to achieve high conversion and adoption rates ",
     image: "/service_assets/web_man.jpg",
     sliders: [
       {
@@ -47,7 +48,7 @@ export const services_information = [
   {
     desc: "Social Media Management",
     infor:
-      "We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market",
+      "We are focused on planning, crafting, and publishing content on socila platforms. We provide regular social profile audits and audience research.Services we provide here include ; social media platform management, influencer marketing, content creation, content marketing, community management, platform audits and email marketing.",
     image: "/service_assets/social_media.jpg",
     sliders: [
       {
@@ -69,7 +70,7 @@ export const services_information = [
   {
     desc: "Videography & Editing",
     infor:
-      "We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market.We Focus On Building on 2 Dimensional and 3 Dimensional animation  On The Market",
+      "We provide services which includes ; cutting segments, re-sequencing clips, sound editing, and adding transitions and other special effects. We deliver awesome editing services ",
     image: "/service_assets/video.jpg",
     sliders: [
       {
@@ -82,16 +83,13 @@ export const services_information = [
       {
         image_slide: "/service_assets/pic_2.png",
       },
-      {
-        image_slide: "/service_assets/pic_3.png",
-      },
     ],
   },
 
   {
-    desc: " Shirt Printing",
+    desc: " Print Design",
     infor:
-      "We are  services such as visual effects services, 2D animation, 3D animation, 3D animation rendering, animatics, storyboards, whiteboard animation, stock animation, character animation, animated feature films, architectural animation,product animation, titling animation, kinetic typography, motion graphics design ,2D inforgraphics video production     ",
+      "We provide services which includes designing and printing of business cards,t-shirts,  brochures, magazines and newspapers, greeting cards and  invitations , calenders, banners, menus, billboards   ;  ",
     image: "/service_assets/3d animation.jpg",
     sliders: [
       {
@@ -130,13 +128,31 @@ export const services_information = [
       {
         image_slide: "/service_assets/flyer_20.jpg",
       },
+      {
+        image_slide: "/service_assets/brochures.jpg",
+      },
+      {
+        image_slide: "/service_assets/calender.jpg",
+      },
+      {
+        image_slide: "/service_assets/tshirt_6.jpg",
+      },
+      {
+        image_slide: "/service_assets/tshirt_5.jpg",
+      },
+      {
+        image_slide: "/service_assets/card.jpg",
+      },
+      {
+        image_slide: "/service_assets/card_1.jpg",
+      },
     ],
   },
 
   {
     desc: "2D & 3D Animation",
     infor:
-      "We are  services such as visual effects services, 2D animation, 3D animation, 3D animation rendering, animatics, storyboards, whiteboard animation, stock animation, character animation, animated feature films, architectural animation,product animation, titling animation, kinetic typography, motion graphics design ,2D inforgraphics video production     ",
+      "We provide services such as visual effects , whiteboard animation, animatic and previsualization, 2D and 3D animation , product animation , logo animation and product animation.     ",
     image: "/service_assets/3d animation.jpg",
     sliders: [
       {
@@ -144,6 +160,9 @@ export const services_information = [
       },
       {
         image_slide: "/service_assets/animation_1.jpg",
+      },
+      {
+        image_slide: "/service_assets/animation_2.jpg",
       },
     ],
   },

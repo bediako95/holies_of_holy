@@ -8,7 +8,6 @@ const About = () => {
         sx={{
           flexDirection: "column",
 
-          m: 30,
           width: "auto",
         }}
       >
@@ -65,6 +64,7 @@ const About = () => {
           sx={{
             ml: 90,
             flexDirection: "column",
+            px: 2,
           }}
         >
           <Text
