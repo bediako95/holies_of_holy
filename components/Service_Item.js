@@ -49,7 +49,7 @@ const Service_Item = ({ item }) => {
               "@media screen and (max-width:720px)": {
                 fontSize: "0.7rem",
                 fontWeight: 600,
-                width: "60%",
+                width: "70%",
               },
             }}
           >

@@ -32,7 +32,7 @@ const About = () => {
               "@media screen and (max-width:720px)": {
                 fontSize: "1.1rem",
               },
-              "@media screen and (max-width:419px)": {
+              "@media screen and (max-width:450px)": {
                 fontSize: "1rem",
               },
             }}
@@ -74,6 +74,9 @@ const About = () => {
             ml: 90,
             flexDirection: "column",
             px: 2,
+            "@media screen and (max-width:450px)": {
+              mb: 20,
+            },
           }}
         >
           <Text
@@ -97,7 +100,7 @@ const About = () => {
                 fontSize: "1rem",
                 mb: "-50px",
               },
-              "@media screen and (max-width:419px)": {
+              "@media screen and (max-width:450px)": {
                 fontSize: "1rem",
                 lineHeight: 2,
               },

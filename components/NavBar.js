@@ -31,12 +31,16 @@ const NavBar = ({ title }) => {
     >
       <Box
         sx={{
-          mt: "-5%",
+          mt: "-2%",
           ml: "-10%",
           pt: 2,
           cursor: "pointer",
           "@media screen and (max-width:720px)": {
             mt: "-8%",
+          },
+          "@media screen and (max-width:450px)": {
+            mt: "-3%",
+            width: "40%",
           },
         }}
       >
@@ -57,6 +61,10 @@ const NavBar = ({ title }) => {
             fontSize: "1rem",
             p: "2% 1% 0% 0%",
             mr: "30%",
+          },
+          "@media screen and (max-width:450px)": {
+            fontSize: "1rem",
+            p: "2% 0% 0% 0%",
           },
         }}
       >
@@ -93,7 +101,7 @@ const NavBar = ({ title }) => {
       <Box
         onClick={() => setActive(!active)}
         sx={{
-          mt: 20,
+          m: "7% 3% 1% 1%",
         }}
       >
         <div

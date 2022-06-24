@@ -76,6 +76,7 @@ const Contact = () => {
               <Text
                 sx={{
                   fontWeight: 700,
+                  textDecoration: "underline",
                   fontSize: "1.2rem",
                   "@media screen and (max-width:720px)": {
                     fontSize: "1.1rem",
@@ -105,6 +106,7 @@ const Contact = () => {
                 sx={{
                   fontWeight: 700,
                   fontSize: "1.2rem",
+                  textDecoration: "underline",
                   "@media screen and (max-width:720px)": {
                     fontSize: "1.1rem",
                   },
@@ -113,7 +115,7 @@ const Contact = () => {
                 Working Hours
               </Text>
               <Text>
-                Mondays - Friday{" "}
+                Mondays - Fridays{" "}
                 <span
                   style={{
                     marginLeft: 40,

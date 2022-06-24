@@ -8,7 +8,7 @@ const Services_List = ({}) => {
     <Flex
       sx={{
         width: "100%",
-        gap: 70,
+        gap: 90,
         mx: "10%",
         pb: "10%",
         px: "5%",
@@ -19,11 +19,14 @@ const Services_List = ({}) => {
           px: "5%",
           mx: "auto",
         },
-        "@media screen and (max-width:720px)": {
-          gap: 3,
+        "@media screen and (max-width:770px)": {
+          gap: 35,
+
+          pb: "10%",
         },
-        "@media screen and (max-width:419px)": {
-          gap: 1,
+        "@media screen and (max-width:450px)": {
+          gap: 2,
+
           //mx: "7%",
         },
       }}

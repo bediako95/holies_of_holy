@@ -30,11 +30,23 @@ const Services = ({ data }) => {
           <Text
             sx={{
               color: "white",
-              mt: "5%",
+              mt: "10%",
+              mb: 2,
               fontSize: "2.5rem",
-              "@media screen and (max-width:600px)": {
+              fontWeight: "bold",
+              textDecoration: "underline",
+              "@media screen and (max-width:1024px)": {
+                fontSize: "2rem",
+                lineHeight: 2,
+              },
+              "@media screen and (max-width:720px)": {
                 fontSize: "1.5rem",
                 lineHeight: 2,
+              },
+              "@media screen and (max-width:447px)": {
+                fontSize: "1.2rem",
+                lineHeight: 2,
+                mt: "20%",
               },
             }}
           >
@@ -45,7 +57,7 @@ const Services = ({ data }) => {
               color: "white",
               fontSize: "1.3rem",
               m: "1% 13% 0%",
-              "@media screen and (max-width:600px)": {
+              "@media screen and (max-width:720px)": {
                 fontSize: "1rem",
                 lineHeight: 1.5,
               },
