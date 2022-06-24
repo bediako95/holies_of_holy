@@ -25,7 +25,7 @@ const NavBar = ({ title }) => {
         position: "fixed",
         zIndex: 1,
         width: "100%",
-        "@media screen and (max-width:720px)": {},
+
         justifyContent: "space-evenly",
       }}
     >
@@ -42,6 +42,11 @@ const NavBar = ({ title }) => {
             mt: "-3%",
             width: "40%",
           },
+          "@media screen and (max-width:420px)": {
+            mt: "-3%",
+
+            width: "30%",
+          },
         }}
       >
         <Image src={logo} width={200} height={150} onClick={handleBack} />
@@ -50,7 +55,7 @@ const NavBar = ({ title }) => {
         sx={{
           color: "white",
           mt: "0.5%",
-
+          //width: "100%",
           p: "1% 10% 0% 0%",
           fontSize: "1.3rem",
           "@media screen and (max-width:1024px)": {
@@ -64,7 +69,8 @@ const NavBar = ({ title }) => {
           },
           "@media screen and (max-width:450px)": {
             fontSize: "1rem",
-            p: "2% 0% 0% 0%",
+            p: "5% 0% 0% 0%",
+            width: "45%",
           },
         }}
       >

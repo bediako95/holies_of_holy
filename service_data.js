@@ -42,6 +42,15 @@ export const services_information = [
       {
         image_slide: "/service_assets/web_3.jpg",
       },
+      {
+        image_slide: "/service_assets/web_1.jpg",
+      },
+      {
+        image_slide: "/service_assets/web-4.jpg",
+      },
+      {
+        image_slide: "/service_assets/web.png",
+      },
     ],
   },
 

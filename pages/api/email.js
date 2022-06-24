@@ -19,7 +19,7 @@ export default function handler(req, res) {
   });
   const mailOptions = {
     from: email, // Sender address
-    to: process.env.ADMIN_USER,
+    to: "junioraddo01@gmail.com",
     subject: subject, // Subject line
     text: message, // Plain text body
     name: fullname,

@@ -13,6 +13,7 @@ const Service_Detail = ({ desc, infor, image }) => {
         p: "5%",
         mb: "-20%",
         gap: "20%",
+        mt: "-3%",
       }}
     >
       <Flex

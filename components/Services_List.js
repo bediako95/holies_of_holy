@@ -29,6 +29,15 @@ const Services_List = ({}) => {
 
           //mx: "7%",
         },
+        "@media screen and (max-width:450px)": {
+          gap: 2,
+
+          //mx: "7%",
+        },
+        "@media screen and (max-width:420px)": {
+          width: "100%",
+          gap: 10,
+        },
       }}
     >
       {Service_data.map((data, i) => (

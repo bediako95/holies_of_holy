@@ -35,11 +35,12 @@ const ImageSliders = ({ images }) => {
         }
       />
       *** */}
-      <Dots
+      {/********* <Dots
         activeIndex={activeIndex}
         imageSlider={images}
         onclick={(activeIndex) => setActiveIndex(activeIndex)}
       />
+       *** */}
     </div>
   );
 };
