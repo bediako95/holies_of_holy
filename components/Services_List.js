@@ -22,8 +22,9 @@ const Services_List = ({}) => {
         "@media screen and (max-width:720px)": {
           gap: 3,
         },
-        "@media screen and (max-width:440px)": {
-          gap: 10,
+        "@media screen and (max-width:419px)": {
+          gap: 1,
+          //mx: "7%",
         },
       }}
     >

@@ -58,7 +58,7 @@ const LandPage = () => {
               fontSize: "1.2rem",
               lineHeight: "30px",
             },
-            "@media screen and (max-width:450px)": {
+            "@media screen and (max-width:419px)": {
               fontSize: "1.1rem",
               width: "85%",
             },
