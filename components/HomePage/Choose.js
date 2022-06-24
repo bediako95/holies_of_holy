@@ -19,6 +19,9 @@ const Choose = () => {
         "@media screen and (max-width:1024px)": {
           mb: "5%",
         },
+        "@media screen and (max-width:450px)": {
+          mb: "-15%",
+        },
       }}
     >
       <Flex

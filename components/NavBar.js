@@ -31,12 +31,12 @@ const NavBar = ({ title }) => {
     >
       <Box
         sx={{
-          mt: "-2.5%",
+          mt: "-5%",
           ml: "-10%",
           pt: 2,
           cursor: "pointer",
           "@media screen and (max-width:720px)": {
-            mt: "-10%",
+            mt: "-8%",
           },
         }}
       >

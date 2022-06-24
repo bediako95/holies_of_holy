@@ -4,6 +4,8 @@ import { Service_data } from "../../service_data";
 import Services_List from "../../components/Services_List";
 import Layout from "../../components/Layout";
 import styles from "../../styles/Home.module.css";
+import { server } from "../../components/server";
+
 const Services = ({ data }) => {
   console.log(data);
   return (
@@ -96,7 +98,9 @@ const Services = ({ data }) => {
 export default Services;
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/services");
+  const url = server;
+  console.log(url);
+  const res = await fetch(`${url}/api/services`);
   const data = await res.json();
 
   return {

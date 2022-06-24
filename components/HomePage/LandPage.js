@@ -36,6 +36,9 @@ const LandPage = () => {
               fontSize: "30px",
               mt: 40,
             },
+            "@media screen and (max-width:450px)": {
+              fontSize: "25px",
+            },
           }}
         >
           A Creative hub of excellence
@@ -54,6 +57,10 @@ const LandPage = () => {
             "@media screen and (max-width:720px)": {
               fontSize: "1.2rem",
               lineHeight: "30px",
+            },
+            "@media screen and (max-width:450px)": {
+              fontSize: "1.1rem",
+              width: "85%",
             },
           }}
         >

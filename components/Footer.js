@@ -1,11 +1,13 @@
 import { Flex, Box, Text } from "@theme-ui/components";
 import Image from "next/image";
 import logo from "../public/service_assets/logo.png";
-
+import { server } from "./server";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
+  const url = server;
+  console.log(url);
   return (
     <Flex
       sx={{
@@ -77,6 +79,7 @@ const Footer = () => {
           flexDirection: "column",
           lineHeight: 2,
           lineHeight: 3,
+
           "@media screen and (max-width:720px)": {
             width: "80%",
             textAlign: "center",
@@ -96,7 +99,11 @@ const Footer = () => {
           Services
         </Text>
 
-        <Link href="http://localhost:3000/services/Web%20development" passHref>
+        <Link
+          href="https://holies-of-holy-23jdk4dq1-bediako95.vercel.app//services/Web%20development"
+          as={`${url}/services/Web%20development`}
+          passHref
+        >
           <a>
             <Text
               sx={{
@@ -109,7 +116,8 @@ const Footer = () => {
         </Link>
 
         <Link
-          href="http://localhost:3000/services/2D%20&%203D%20Animation"
+          href="/services/2D%20&%203D%20Animation"
+          as={`${url}/services/2D%20&%203D%20Animation`}
           passHref
         >
           <a>
@@ -124,9 +132,21 @@ const Footer = () => {
         </Link>
 
         <Link
-          href="http://localhost:3000/services/Social%20Media%20Management"
+          href="/services/%20Print%20Design"
+          as={`${url}/services/%20Print%20Design`}
           passHref
         >
+          <a>
+            <Text
+              sx={{
+                color: "white",
+              }}
+            >
+              Print Design
+            </Text>
+          </a>
+        </Link>
+        <Link href={`${url}/services/Social%20Media%20Managemen`} passHref>
           <a>
             <Text
               sx={{
@@ -138,20 +158,9 @@ const Footer = () => {
           </a>
         </Link>
 
-        <Link href="http://localhost:3000/services/%20Print%20Design" passHref>
-          <a>
-            <Text
-              sx={{
-                color: "white",
-              }}
-            >
-              Print Design
-            </Text>
-          </a>
-        </Link>
-
         <Link
-          href="http://localhost:3000/services/Videography%20&%20Editing"
+          href="/services/Videography%20&%20Editing"
+          as={`${url}/services/Videography%20&%20Editing`}
           passHref
         >
           <a>
@@ -239,16 +248,19 @@ const Footer = () => {
           >
             {/****<SocialIcon network="twitter" fgColor="white" url="" />*/}
             <SocialIcon
+              target="_blank"
               network="instagram"
               fgColor="white"
               url="https://www.instagram.com/holyofholiesconcepts_/"
             />
             <SocialIcon
+              target="_blank"
               network="mailto"
               fgColor="white"
               url="mailto:holyofholiesconcepts@gmail.com"
             />
             <SocialIcon
+              target="_blank"
               network="youtube"
               fgColor="white"
               url="https://www.youtube.com/channel/UCZv3SEcKCenhzjM3utoU46g"
@@ -256,6 +268,7 @@ const Footer = () => {
 
             <SocialIcon
               network="whatsapp"
+              target="_blank"
               fgColor="white"
               url="https://web.whatsapp.com/send?phone=551655728&text&app_absent=0"
             />
@@ -265,7 +278,6 @@ const Footer = () => {
             sx={{
               color: "white",
               mt: "5%",
-              "@media screen and (max-width:720px)": {},
             }}
           >
             &copy; 2022 Holy of Holies Concept

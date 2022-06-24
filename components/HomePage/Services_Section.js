@@ -12,6 +12,9 @@ const Services_Section = () => {
         bg: "#F4CA16",
         height: "60vh",
         mb: 30,
+        "@media screen and (max-width:450px)": {
+          height: "50vh",
+        },
       }}
     >
       <Flex

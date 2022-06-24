@@ -17,6 +17,9 @@ const About = () => {
             alignItems: "center",
             m: 100,
             width: "auto",
+            "@media screen and (max-width:720px)": {
+              m: 80,
+            },
           }}
         >
           <Text
@@ -25,6 +28,9 @@ const About = () => {
               fontWeight: 700,
               "@media screen and (max-width:720px)": {
                 fontSize: "1.1rem",
+              },
+              "@media screen and (max-width:450px)": {
+                fontSize: "1rem",
               },
             }}
           >
@@ -87,6 +93,10 @@ const About = () => {
               "@media screen and (max-width:720px)": {
                 fontSize: "1rem",
                 mb: "-50px",
+              },
+              "@media screen and (max-width:450px)": {
+                fontSize: "1rem",
+                lineHeight: 2,
               },
             }}
           >
