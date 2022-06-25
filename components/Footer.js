@@ -14,7 +14,7 @@ const Footer = () => {
         mt: "20%",
         justifyContent: "space-around",
         bg: "black",
-        p: 5,
+        p: 3,
         gap: 80,
 
         "@media screen and (max-width:720px)": {
@@ -30,6 +30,9 @@ const Footer = () => {
           "@media screen and (max-width:720px)": {
             width: "80%",
           },
+          "@media screen and (max-width:1024px)": {
+            width: "50%",
+          },
         }}
       >
         <Text
@@ -40,9 +43,12 @@ const Footer = () => {
               textAlign: "center",
               textDecoration: "underline",
             },
+            "@media screen and (max-width:1024px)": {
+              lineHeight: 2,
+            },
           }}
         >
-          Tech Solutions
+          HOLY OF HOLIES Tech Solutions
         </Text>
         <Text
           sx={{
@@ -77,12 +83,15 @@ const Footer = () => {
       <Flex
         sx={{
           flexDirection: "column",
-          lineHeight: 2,
+
           lineHeight: 3,
 
           "@media screen and (max-width:720px)": {
             width: "80%",
             textAlign: "center",
+          },
+          "@media screen and (max-width:1024px)": {
+            width: "50%",
           },
         }}
       >
@@ -100,7 +109,7 @@ const Footer = () => {
         </Text>
 
         <Link
-          href="https://holies-of-holy-23jdk4dq1-bediako95.vercel.app//services/Web%20development"
+          href={`${url}/services/Web%20development`}
           as={`${url}/services/Web%20development`}
           passHref
         >

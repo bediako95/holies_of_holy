@@ -56,7 +56,7 @@ const Services = ({ data }) => {
             sx={{
               color: "white",
               fontSize: "1.3rem",
-              m: "1% 13% 0%",
+              m: "1% 13% 10%",
               "@media screen and (max-width:720px)": {
                 fontSize: "1rem",
                 lineHeight: 1.5,

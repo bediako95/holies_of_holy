@@ -134,7 +134,7 @@ const Contact = () => {
             boxShadow: " 3px 0px 5px #ccc",
             px: "5%",
             py: "3%",
-            m: "20% 15% 5% 5%",
+            m: "5% 15% 5% 5%",
             width: "100%",
 
             "@media screen and (max-width:1024px)": {},

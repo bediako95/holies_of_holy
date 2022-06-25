@@ -10,6 +10,7 @@ import {
 import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { server } from "../server";
 
 const Index = () => {
   const [fullname, setFullname] = useState("");
@@ -21,6 +22,8 @@ const Index = () => {
 
   //send email function
   const SendEmail = async (e) => {
+    const url = server;
+    console.log(`Url of submit function is ${url}`);
     e.preventDefault();
     console.log("Mail sent");
 
@@ -35,7 +38,7 @@ const Index = () => {
 
     axios
       .post(
-        "http://localhost:3000/api/email",
+        `${url}/api/email`,
         data,
 
         {
@@ -45,12 +48,12 @@ const Index = () => {
         }
       )
       .then((res) => {
-        alert("Send feeaback");
+        alert("Send message");
 
         console.log(`Status:${res.status}`);
         //console.log(`Body:${res.data}`);
       })
-      .catch((e) => console.log(`The error is ${e}`));
+      .catch((e) => console.log(`The error : ${e}`));
   };
 
   return (

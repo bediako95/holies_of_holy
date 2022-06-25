@@ -8,10 +8,11 @@ export default function handler(req, res) {
   const { fullname } = req.body;
   const { message } = req.body;
   const { subject } = req.body;
+
   const nodemailer = require("nodemailer");
   let transport = nodemailer.createTransport({
     host: "smtp.mailtrap.io",
-    port: process.env.PORT,
+    port: 2525,
     auth: {
       user: "ab94162b793d55",
       pass: "4eb0205473bf3f",
@@ -19,11 +20,19 @@ export default function handler(req, res) {
   });
   const mailOptions = {
     from: email, // Sender address
-    to: "junioraddo01@gmail.com",
+    to: process.env.ADMIN_USER,
     subject: subject, // Subject line
     text: message, // Plain text body
     name: fullname,
   };
+  transport.verify(function (error, success) {
+    if (error) {
+      console.log(`Server not ready with error ${error}`);
+    } else {
+      console.log("Server is ready to take our messages");
+    }
+  });
+
   try {
     transport.sendMail(mailOptions, function (err, info) {
       if (err) {
