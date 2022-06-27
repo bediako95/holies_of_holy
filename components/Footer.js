@@ -124,7 +124,7 @@ const Footer = () => {
         </Link>
 
         <Link
-          href="/services/2D%20&%203D%20Animation"
+          href={`${url}/services/2D%20&%203D%20Animation`}
           as={`${url}/services/2D%20&%203D%20Animation`}
           passHref
         >
@@ -140,7 +140,7 @@ const Footer = () => {
         </Link>
 
         <Link
-          href="/services/%20Print%20Design"
+          href={`${url}/services/%20Print%20Design`}
           as={`${url}/services/%20Print%20Design`}
           passHref
         >
@@ -166,11 +166,7 @@ const Footer = () => {
           </a>
         </Link>
 
-        <Link
-          href="/services/Videography%20&%20Editing"
-          as={`${url}/services/Videography%20&%20Editing`}
-          passHref
-        >
+        <Link href={`${url}/services/%20Print%20Design`} passHref>
           <a>
             <Text
               sx={{
