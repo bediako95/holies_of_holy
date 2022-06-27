@@ -60,8 +60,7 @@ const Footer = () => {
           }}
         >
           A creative and technological hub focusing on providing quality and
-          cost effective solutions. This is your number one hub for all your
-          creatives.
+          cost effective solutions. This is your number one creative hub.
         </Text>
 
         <Flex

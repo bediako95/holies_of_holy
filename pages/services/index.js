@@ -34,7 +34,7 @@ const Services = ({ data }) => {
               mb: 2,
               fontSize: "2.5rem",
               fontWeight: "bold",
-              textDecoration: "underline",
+
               "@media screen and (max-width:1024px)": {
                 fontSize: "2rem",
                 lineHeight: 2,
