@@ -8,7 +8,7 @@ const GridView = ({ bgImage, title, desc }) => {
         height: "100%",
         width: "100%",
         "@media screen and (max-width:720px)": {
-          m: 1,
+          mx: 2,
         },
       }}
     >
@@ -26,12 +26,12 @@ const GridView = ({ bgImage, title, desc }) => {
           "@media screen and (max-width:720px)": {
             lineHeight: 1.5,
             height: "70%",
-            width: "90%",
+            width: "100%",
             mx: "auto",
             px: 10,
             py: 30,
 
-            "@media screen and (max-width:720px)": {},
+            "@media screen and (max-width:450px)": {},
           },
         }}
       >

@@ -33,7 +33,7 @@ const Index = () => {
       subject,
       message,
     };
-
+    console.log(url);
     console.log(data);
 
     axios

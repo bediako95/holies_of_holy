@@ -20,7 +20,7 @@ const NavBar = ({ title }) => {
         justifyContent: "space-between",
         padding: 10,
 
-        height: 70,
+        height: 75,
         bg: "black",
         position: "fixed",
         zIndex: 1,
@@ -31,10 +31,13 @@ const NavBar = ({ title }) => {
     >
       <Box
         sx={{
-          mt: "-2%",
+          mt: "-3%",
           ml: "-10%",
           pt: 2,
           cursor: "pointer",
+          "@media screen and (max-width:1024px)": {
+            mt: "-5%",
+          },
           "@media screen and (max-width:720px)": {
             mt: "-8%",
           },
@@ -99,6 +102,11 @@ const NavBar = ({ title }) => {
           <li className={navstyle.li}>
             <Link href="/contact" passHref>
               <a>Contact</a>
+            </Link>
+          </li>
+          <li className={navstyle.li}>
+            <Link href="/blog" passHref>
+              <a>Blog</a>
             </Link>
           </li>
         </ul>

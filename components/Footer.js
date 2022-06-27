@@ -48,7 +48,7 @@ const Footer = () => {
             },
           }}
         >
-          HOLY OF HOLIES Tech Solutions
+          THE TECH HOUSE
         </Text>
         <Text
           sx={{
@@ -279,7 +279,7 @@ const Footer = () => {
               network="whatsapp"
               target="_blank"
               fgColor="white"
-              url="https://web.whatsapp.com/send?phone=551655728&text&app_absent=0"
+              url="https://wa.me/0s551655728"
             />
             <SocialIcon network="facebook" fgColor="white" url="#" />
           </Flex>
@@ -289,7 +289,7 @@ const Footer = () => {
               mt: "5%",
             }}
           >
-            &copy; 2022 Holy of Holies Concept
+            &copy; 2022 The Tech House Inc.
           </Text>
         </Flex>
       </Flex>
