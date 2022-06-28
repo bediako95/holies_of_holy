@@ -42,6 +42,7 @@ const Index = () => {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "*",
         },
+        withCredentials: true,
       })
       .then((res) => {
         alert("Send message");
