@@ -58,7 +58,7 @@ const NavBar = ({ title }) => {
         sx={{
           color: "white",
           mt: "0.5%",
-          //width: "100%",
+          width: "100%",
           p: "1% 10% 0% 0%",
           fontSize: "1.3rem",
           "@media screen and (max-width:1024px)": {
@@ -69,6 +69,7 @@ const NavBar = ({ title }) => {
             fontSize: "1rem",
             p: "2% 1% 0% 0%",
             mr: "30%",
+            width: "20%",
           },
           "@media screen and (max-width:450px)": {
             fontSize: "1rem",

@@ -33,7 +33,7 @@ const LandPage = () => {
               fontSize: "40px",
             },
             "@media screen and (max-width:720px)": {
-              fontSize: "30px",
+              fontSize: "1.7rem",
               mt: 40,
             },
             "@media screen and (max-width:450px)": {
@@ -55,7 +55,7 @@ const LandPage = () => {
               width: "70%",
             },
             "@media screen and (max-width:720px)": {
-              fontSize: "1.2rem",
+              fontSize: "1.1rem",
               lineHeight: "30px",
             },
             "@media screen and (max-width:419px)": {

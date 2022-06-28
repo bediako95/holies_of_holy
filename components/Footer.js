@@ -284,7 +284,7 @@ const Footer = () => {
               mt: "5%",
             }}
           >
-            &copy; 2022 The Tech House Inc.
+            &copy; 2022 The Tech House
           </Text>
         </Flex>
       </Flex>
