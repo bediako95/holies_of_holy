@@ -37,16 +37,12 @@ const Index = () => {
     console.log(data);
 
     axios
-      .post(
-        `${url}/api/email`,
-        data,
-
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      )
+      .post(`${url}/api/email`, data, {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
       .then((res) => {
         alert("Send message");
 
