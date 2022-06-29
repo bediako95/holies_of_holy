@@ -8,18 +8,20 @@ const Service_Detail = ({ desc, infor, image }) => {
     <Flex
       sx={{
         flexDirection: "column",
-        height: "80vh",
+
+        py: "120px",
+        px: "20px",
         bg: "white",
-        p: "5%",
-        mb: "-20%",
-        gap: "20%",
-        mt: "-3%",
+
+        gap: "0%",
       }}
     >
       <Flex
         sx={{
           flexDirection: "column",
           color: "black",
+          maxWidth: "700px",
+          mx: "auto",
         }}
       >
         <Text
@@ -52,9 +54,9 @@ const Service_Detail = ({ desc, infor, image }) => {
             fontSize: "1.3rem",
             lineHeight: 2,
             textAlign: "center",
+
             "@media screen and (max-width:720px)": {
               fontSize: "1.1rem",
-              px: 3,
             },
           }}
         >

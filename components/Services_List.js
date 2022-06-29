@@ -7,36 +7,24 @@ const Services_List = ({}) => {
   return (
     <Flex
       sx={{
-        width: "100%",
+        //width: "100%",
         gap: 100,
-        mx: "5%",
+        //mx: "5%",
         pb: "10%",
-        px: "15%",
+        justifyContent: "center",
+        // px: "15%",
 
         "@media screen and (max-width:1024px)": {
-          width: "90%",
+          // width: "90%",
           gap: 50,
-          px: "5%",
-          mx: "auto",
+          justifyContent: "center",
         },
         "@media screen and (max-width:720px)": {
           gap: 30,
+          justifyContent: "center",
+          px: 25,
 
           pb: "10%",
-        },
-        "@media screen and (max-width:450px)": {
-          gap: 2,
-
-          //mx: "7%",
-        },
-        "@media screen and (max-width:450px)": {
-          gap: 2,
-
-          //mx: "7%",
-        },
-        "@media screen and (max-width:420px)": {
-          width: "100%",
-          gap: 10,
         },
       }}
     >

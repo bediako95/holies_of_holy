@@ -9,24 +9,15 @@ const Choose = () => {
     <Flex
       sx={{
         flexDirection: "column",
-        height: "90vh",
 
-        mt: "20%",
-        mb: "-25%",
-
-        boxShadow: " 5px 0px 5px  #ccc",
-
-        "@media screen and (max-width:1024px)": {
-          mb: "5%",
-        },
-        "@media screen and (max-width:450px)": {
-          mb: "-15%",
-        },
+        py: "120px",
+        pb: "240px",
+        // mb: "-25%",
       }}
     >
       <Flex
         sx={{
-          p: 10,
+          // p: 10,
           textAlign: "center",
           flexDirection: "column",
         }}
@@ -42,18 +33,16 @@ const Choose = () => {
         >
           Why Choose us
         </Text>
-        <Text
-          sx={{
-            color: "#F4CA16",
-            fontWeight: "bold",
-            fontSize: "30px",
-          }}
-        >
-          ____________
-        </Text>
       </Flex>
 
-      <Flex>
+      <Flex
+        sx={{
+          flexDirection: "column",
+          "@media screen and (min-width:720px)": {
+            flexDirection: "row",
+          },
+        }}
+      >
         {ChooseData.map((data, i) => (
           <>
             <GridView

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <Flex
       sx={{
-        mt: "20%",
+        // py
         justifyContent: "space-around",
         bg: "black",
         p: 3,

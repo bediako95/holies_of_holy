@@ -16,7 +16,6 @@ const GridView = ({ bgImage, title, desc }) => {
         sx={{
           m: 30,
           p: 15,
-
           flexDirection: "column",
           justifyContent: "space-between",
           boxShadow: "0 0 20px #ccc",

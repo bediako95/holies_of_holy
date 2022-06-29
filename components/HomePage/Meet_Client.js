@@ -8,13 +8,11 @@ const Meet_Client = () => {
     <Flex
       sx={{
         flexDirection: "column",
-        height: "30vh",
-        p: 10,
+        py: "120px",
       }}
     >
       <Flex
         sx={{
-          p: 10,
           textAlign: "center",
           flexDirection: "column",
         }}
@@ -50,14 +48,14 @@ const Meet_Client = () => {
       <Flex
         sx={{
           gap: 20,
-          m: 20,
-          p: 20,
+          // m: 20,
+          // p: 20,
           alignContent: "center",
 
           "@media screen and (max-width:720px)": {
             gap: 10,
             m: 10,
-            p: 10,
+            // p: 10,
           },
         }}
       >
