@@ -112,9 +112,9 @@ export default Services;
 export async function getServerSideProps() {
   const url = server;
   console.log(`This is the url of service ${url}`);
-  const res = await fetch(`${url}/api/services`);
-  const data = await res.json();
-
+  //const res = await fetch(`${url}/api/services`);
+  //const data = await res.json();
+  const data = Service_data;
   return {
     props: {
       data,

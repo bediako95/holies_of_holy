@@ -7,7 +7,11 @@ const SliderContent = ({ activeIndex, imageSlider }) => {
       {imageSlider.map((slide, index) => (
         <div
           key={index}
-          className={index === activeIndex ? style.active : style.inactive}
+          className={style.slider_content}
+          style={{
+            display: `${index === activeIndex ? "" : "none"}`,
+            // transform: "translateX(0)",
+          }}
         >
           <img
             src={slide.image_slide}

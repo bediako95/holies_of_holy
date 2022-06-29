@@ -30,15 +30,14 @@
 }
 
 
-.active{
+.slider_content{
     display: inline-block;
     height: var(--heights);
     width: var(--widths);
+   
+
 }
 
-.inactive{
-display: none;
-}
 
 
 .slide_image{
