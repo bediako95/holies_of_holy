@@ -40,9 +40,9 @@ const Index = () => {
       .post(`${url}/api/email`, data, {
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": true,
         },
-        withCredentials: true,
+        //withCredentials: true,
       })
       .then((res) => {
         alert("Send message");

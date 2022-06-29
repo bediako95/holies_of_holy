@@ -1,10 +1,5 @@
 export const Service_data = [
   {
-    image: "/service_assets/web.jpg",
-    desc: "Web development ",
-  },
-
-  {
     image: "/service_assets/social.jpg",
     desc: "Social Media Management",
   },
@@ -30,30 +25,6 @@ export const Service_data = [
 ];
 
 export const services_information = [
-  {
-    desc: "Web development",
-    infor:
-      "We help create all types of web-based software and ensure great epxerience for web users. We professionally design, redesign and continously support customer-facing and enterpreise web apps to achieve high conversion and adoption rates ",
-    image: "/service_assets/web_man.jpg",
-    sliders: [
-      {
-        image_slide: "/service_assets/web_2.jpg",
-      },
-      {
-        image_slide: "/service_assets/web_3.jpg",
-      },
-      {
-        image_slide: "/service_assets/web_1.jpg",
-      },
-      {
-        image_slide: "/service_assets/web-4.jpg",
-      },
-      {
-        image_slide: "/service_assets/web.png",
-      },
-    ],
-  },
-
   {
     desc: "Social Media Management",
     infor:

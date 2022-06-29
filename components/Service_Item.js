@@ -12,7 +12,7 @@ const Service_Item = ({ item }) => {
       sx={{
         flexDirection: "column",
         width: "100%",
-
+        textAlign: "center",
         "@media screen and (max-width:720px)": {
           width: "100%",
         },

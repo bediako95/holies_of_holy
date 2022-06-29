@@ -48,7 +48,7 @@ const Footer = () => {
             },
           }}
         >
-          THE TECH HOUSE
+          Holies of Holy Concept
         </Text>
         <Text
           sx={{
@@ -106,22 +106,6 @@ const Footer = () => {
         >
           Services
         </Text>
-
-        <Link
-          href={`${url}/services/Web%20development`}
-          as={`${url}/services/Web%20development`}
-          passHref
-        >
-          <a>
-            <Text
-              sx={{
-                color: "white",
-              }}
-            >
-              Web development
-            </Text>
-          </a>
-        </Link>
 
         <Link
           href={`${url}/services/2D%20&%203D%20Animation`}

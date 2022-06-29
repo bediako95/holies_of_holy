@@ -94,7 +94,7 @@ const About = () => {
 
           <Text
             sx={{
-              fontSize: "1.1rem",
+              fontSize: "1.2rem",
               mb: "-70px",
               "@media screen and (max-width:720px)": {
                 fontSize: "1rem",

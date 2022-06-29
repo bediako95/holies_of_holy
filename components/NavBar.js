@@ -19,7 +19,7 @@ const NavBar = ({ title }) => {
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 10,
-
+        gap: 140,
         height: 75,
         bg: "black",
         position: "fixed",
@@ -31,7 +31,7 @@ const NavBar = ({ title }) => {
     >
       <Box
         sx={{
-          mt: "-3%",
+          mt: "-2.5%",
           ml: "-10%",
           pt: 2,
           cursor: "pointer",
@@ -54,39 +54,13 @@ const NavBar = ({ title }) => {
       >
         <Image src={logo} width={200} height={150} onClick={handleBack} />
       </Box>
-      <Box
-        sx={{
-          color: "white",
-          mt: "0.5%",
-          width: "100%",
-          p: "1% 10% 0% 0%",
-          fontSize: "1.3rem",
-          "@media screen and (max-width:1024px)": {
-            fontSize: "1.1rem",
-          },
-
-          "@media screen and (max-width:720px)": {
-            fontSize: "1rem",
-            p: "2% 1% 0% 0%",
-            mr: "30%",
-            width: "20%",
-          },
-          "@media screen and (max-width:450px)": {
-            fontSize: "1rem",
-            p: "5% 0% 0% 0%",
-            width: "45%",
-          },
-        }}
-      >
-        {title}
-      </Box>
 
       <Flex
         as="nav"
         sx={{
           mt: "15px",
 
-          mr: 60,
+          //m
         }}
       >
         <ul className={active ? navstyle.ul_active : navstyle.ul}>

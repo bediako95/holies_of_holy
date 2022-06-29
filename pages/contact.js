@@ -85,7 +85,7 @@ const Contact = () => {
               >
                 Address
               </Text>
-              <Text>Ablekuma NIC Top Accra, Ghana</Text>
+              <Text sx={{}}>Ablekuma NIC Top Accra, Ghana</Text>
               <Text>Tel : 0551655728</Text>
               <Text>Email : holyofholiesconcepts@gmail.com</Text>
               <Text>Instagram : holyofholiesconcepts_</Text>
