@@ -1,5 +1,15 @@
+import Layout from "../components/Layout";
+import { Flex, Text, Box } from "@theme-ui/components";
 const blog = () => {
-  return <div>blog</div>;
+  return (
+    <Layout>
+      <Flex
+        sx={{
+          height: "100vh",
+        }}
+      ></Flex>
+    </Layout>
+  );
 };
 
 export default blog;

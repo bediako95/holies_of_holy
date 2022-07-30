@@ -15,7 +15,7 @@ const Services = ({ data }) => {
           flexDirection: "column",
           bg: "#F4CA16",
           height: "100vh",
-          mb: "-20%",
+          py: 5,
         }}
       >
         <Flex
@@ -30,7 +30,7 @@ const Services = ({ data }) => {
           <Text
             sx={{
               color: "white",
-              mt: "10%",
+              mt: "25%",
               mb: 2,
               fontSize: "2.5rem",
               fontWeight: "bold",

@@ -5,29 +5,31 @@ const GridView = ({ bgImage, title, desc }) => {
   return (
     <Flex
       sx={{
-        height: "100%",
-        width: "100%",
+        height: "50%",
+        width: "80%",
         "@media screen and (max-width:720px)": {
-          mx: 2,
+          mx: "auto",
+          px: 10,
         },
       }}
     >
       <Flex
         sx={{
           m: 30,
-          p: 15,
           flexDirection: "column",
           justifyContent: "space-between",
           boxShadow: "0 0 20px #ccc",
           borderRadius: "20px",
           lineHeight: 2,
           textAlign: "center",
+          px: 30,
+          py: 30,
           "@media screen and (max-width:720px)": {
-            lineHeight: 1.5,
+            lineHeight: 3,
             height: "70%",
             width: "100%",
             mx: "auto",
-            px: 10,
+            px: 30,
             py: 30,
 
             "@media screen and (max-width:450px)": {},
@@ -62,7 +64,7 @@ const GridView = ({ bgImage, title, desc }) => {
               pb: 3,
             },
             "@media screen and (max-width:720px)": {
-              fontSize: "0.8rem",
+              fontSize: "1.1rem",
               pb: 3,
             },
           }}
@@ -77,7 +79,7 @@ const GridView = ({ bgImage, title, desc }) => {
 
             "@media screen and (max-width:720px)": {
               lineHeight: 1.2,
-              fontSize: "0.9rem",
+              fontSize: "1.1rem",
               pb: "100%",
               p: "15% 15% 130% 15%",
               m: "-19%",
